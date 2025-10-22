@@ -86,14 +86,93 @@ nav {
 
 .info {
   min-height: 325px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.info h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box {
+  max-width: 150px;
+  max-height: 150px;
+  flex-shrink: 1;
+  text-align: center;
+}
+
+.box-template {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
 }
 
 .quote {
+  background-color: #e5e7eb;
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote i {
+  width: 690px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+}
+
+.quote strong {
+  width: 630px;
+  font-size: 20px;
+  text-align: end;
 }
 
 .sign-up {
   min-height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-box {
+  background-color: #3882f6;
+  width: 820px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0px;
+  border-radius: 10px;
+}
+
+.sign-up-text h3 {
+  color: #f4f8ff;
+}
+
+.sign-up-text p {
+  color: #e5e7eb;
+}
+
+.sign-up-button button {
+  background-color: #3882f6;
+  border-radius: 5px;
+  border-color: #f4f8ff;
+  border-style: solid;
+  color: #f4f8ff;
+  padding: 6px 16px;
 }
 
 footer {
